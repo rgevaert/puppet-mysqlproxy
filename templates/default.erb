@@ -1,0 +1,13 @@
+ENABLED="<%= defaultenabled %>"
+OPTIONS="<%if backends.is_a? Array -%>
+<% backends.each do |backend| -%><%= "--proxy-backend-addresses=#{backend} " %><% end -%>
+<% elsif backends != '' -%>
+<%= "--proxy-backend-addresses=#{backends} " -%>
+<% end -%>
+<% if luascript != '' -%>
+<%= "--proxy-lua-script=#{luascript} " -%>
+<% end -%>
+<% if address != '' -%>
+<%= "--proxy-address=#{address} " -%>
+<% end -%>
+<%= options %>"

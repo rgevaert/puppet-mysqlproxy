@@ -1,3 +1,13 @@
 mysqlproxy
 
 This is the mysqlproxy module.
+
+Example usage:
+
+class {
+  'mysqlproxy':
+    address   => '127.0.0.1:9999',
+    luascript => 'mc.lua',
+    options   => '--log-use-syslog',
+    backends  => ['mysql3.ugent.be:3306', 'mysql3.ugent.be:3307'];
+}
