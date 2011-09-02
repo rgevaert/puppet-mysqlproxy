@@ -1,0 +1,1 @@
+Add in this directory your lua scripts.  They will be distributed to all mysql-proxy servers.
