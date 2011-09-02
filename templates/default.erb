@@ -5,7 +5,7 @@ OPTIONS="<%if backends.is_a? Array -%>
 <%= "--proxy-backend-addresses=#{backends} " -%>
 <% end -%>
 <% if luascript != '' -%>
-<%= "--proxy-lua-script=#{luascript} " -%>
+<%= "--proxy-lua-script=/etc/mysql-proxy/lua.d/#{luascript} " -%>
 <% end -%>
 <% if address != '' -%>
 <%= "--proxy-address=#{address} " -%>
