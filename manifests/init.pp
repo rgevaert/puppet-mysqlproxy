@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class mysqlproxy ($defaultenabled="true", $address='', $backends='', $luascript='', $options='') {
+class mysqlproxy ($defaultenabled="true", $address='', $backends='', $luascript='', $options='', $adminaddress='', $adminusername='', $adminpassword='', $adminluascript='') {
 
   include install
   include config

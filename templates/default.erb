@@ -10,4 +10,16 @@ OPTIONS="<%if backends.is_a? Array -%>
 <% if address != '' -%>
 <%= "--proxy-address=#{address} " -%>
 <% end -%>
+<% if adminaddress != '' -%>
+<%= "--admin-address=#{adminaddress} " -%>
+<% end -%>
+<% if adminusername != '' -%>
+<%= "--admin-username=#{adminusername} " -%>
+<% end -%>
+<% if adminpassword != '' -%>
+<%= "--admin-password=#{adminpassword} " -%>
+<% end -%>
+<% if adminluascript != '' -%>
+<%= "--admin-lua-script=#{adminluascript} " -%>
+<% end -%>
 <%= options %>"
